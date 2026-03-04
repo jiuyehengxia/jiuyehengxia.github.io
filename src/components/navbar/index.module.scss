@@ -4,21 +4,23 @@
   gap: 30px;
   padding: 15px 0;
   border-bottom: 1px solid #eee;
-}
 
-.link {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-}
+  :global {
+    .link {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
 
-.link:hover {
-  color: #007bff;
-}
+    .link:hover {
+      color: #007bff;
+    }
 
-.active {
-  text-decoration: none;
-  color: #007bff;
-  font-size: 16px;
-  font-weight: 500;
+    .active {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
 }
