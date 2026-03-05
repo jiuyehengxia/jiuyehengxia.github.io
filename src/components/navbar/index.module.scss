@@ -23,4 +23,28 @@
       font-weight: 500;
     }
   }
+
+  @media (max-width: 768px) {
+    gap: 20px;
+    padding: 12px 0;
+
+    :global {
+      .link,
+      .active {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    gap: 15px;
+    padding: 10px 15px;
+
+    :global {
+      .link,
+      .active {
+        font-size: 13px;
+      }
+    }
+  }
 }
