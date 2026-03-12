@@ -14,5 +14,10 @@ export default function Home() {
       setShowWelcome(false);
     }, welcomeDuration);
 
-  return <div>{showWelcome && <Welcome />}</div>;
+  return (
+    <div>
+      {showWelcome && <Welcome />}
+      建设中...
+    </div>
+  );
 }
