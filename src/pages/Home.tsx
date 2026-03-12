@@ -1,3 +1,15 @@
+import { useState, useEffect } from 'react';
+import Welcome from '@/components/welcome';
+import { welcomeDuration } from '@/common/constants.ts';
+
 export default function Home() {
-  return <h1>home page change</h1>;
+  const [showWelcome, setShowWelcome] = useState<boolean>(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowWelcome(false);
+    }, welcomeDuration);
+  }, []);
+
+  return <div>{showWelcome && <Welcome />}</div>;
 }

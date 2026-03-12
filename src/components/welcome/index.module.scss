@@ -1,0 +1,32 @@
+$duration-time: 1.5s;
+
+.welcome-out-wrap {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh);
+  top: 0;
+  background-color: #213547;
+
+  :global {
+    animation: background-opacity 0.5s ease-in 1.2s forwards;
+
+    .single-text {
+      color: #fff;
+      font-size: 160px;
+      position: absolute;
+    }
+
+    .left-top-text {
+      animation: left-top-move-in $duration-time ease-in 0s forwards;
+    }
+    .right-top-text {
+      animation: right-top-move-in $duration-time ease-in 0s forwards;
+    }
+    .left-bottom-text {
+      animation: left-bottom-move-in $duration-time ease-in 0s forwards;
+    }
+    .right-bottom-text {
+      animation: right-bottom-move-in $duration-time ease-in 0s forwards;
+    }
+  }
+}
