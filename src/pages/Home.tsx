@@ -6,10 +6,13 @@ export default function Home() {
   const [showWelcome, setShowWelcome] = useState<boolean>(true);
 
   useEffect(() => {
+    updateShowWelcome();
+  }, []);
+
+  const updateShowWelcome = () =>
     setTimeout(() => {
       setShowWelcome(false);
     }, welcomeDuration);
-  }, []);
 
   return <div>{showWelcome && <Welcome />}</div>;
 }

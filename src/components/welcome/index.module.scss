@@ -14,6 +14,9 @@ $duration-time: 1.5s;
       color: #fff;
       font-size: 160px;
       position: absolute;
+      text-shadow:
+        1px 1px 2px rgba(0, 0, 0, 0.5),
+        3px 3px 5px rgba(255, 255, 255, 0.3);
     }
 
     .left-top-text {
@@ -27,6 +30,25 @@ $duration-time: 1.5s;
     }
     .right-bottom-text {
       animation: right-bottom-move-in $duration-time ease-in 0s forwards;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-out-wrap {
+    :global {
+      .left-top-text {
+        animation: left-top-move-in-mobile $duration-time ease-in 0s forwards;
+      }
+      .right-top-text {
+        animation: right-top-move-in-mobile $duration-time ease-in 0s forwards;
+      }
+      .left-bottom-text {
+        animation: left-bottom-move-in-mobile $duration-time ease-in 0s forwards;
+      }
+      .right-bottom-text {
+        animation: right-bottom-move-in-mobile $duration-time ease-in 0s forwards;
+      }
     }
   }
 }
